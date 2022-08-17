@@ -1,6 +1,5 @@
 import java.io.File;
 import java.io.FileInputStream;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,7 +13,6 @@ public class Termo extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // System.out.println(getClass().getResource("Views/SelectGameType.fxml"));
         FXMLLoader fxmlLoader = new FXMLLoader();
         FileInputStream fileInputStream = new FileInputStream(new File("Views/SelectGameType.fxml"));
         Parent root = fxmlLoader.load(fileInputStream);
@@ -23,5 +21,8 @@ public class Termo extends Application{
         primaryStage.setTitle("Termo");
         primaryStage.setScene(view);
         primaryStage.show();
+    }
+    public void gameSelected(Stage primaryStage, int gameType) throws Exception {
+        System.out.println(gameType);
     }
 }
