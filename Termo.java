@@ -11,7 +11,6 @@ public class Termo extends Application{
         launch(args);
     }
 
-    @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader fxmlLoader = new FXMLLoader();
         FileInputStream fileInputStream = new FileInputStream(new File("Views/SelectGameType.fxml"));
@@ -21,8 +20,5 @@ public class Termo extends Application{
         primaryStage.setTitle("Termo");
         primaryStage.setScene(view);
         primaryStage.show();
-    }
-    public void gameSelected(Stage primaryStage, int gameType) throws Exception {
-        System.out.println(gameType);
     }
 }
