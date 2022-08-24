@@ -29,8 +29,8 @@ public class GetWord {
 
     private static int position(List list) {
         Random rand = new Random();
-        int upperbound = list.size();
-        int int_random = rand.nextInt(upperbound);
+        int upperBound = list.size();
+        int int_random = rand.nextInt(upperBound);
         return int_random;
     }
 }

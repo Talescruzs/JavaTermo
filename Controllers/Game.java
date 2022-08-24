@@ -25,12 +25,11 @@ public class Game {
 
     public void setGameWord(ActionEvent event, String word) throws IOException {
         this.gameWord = word;
+        title.setText("DIGITE UMA PALAVRA DE "+this.gameWord.length()+ " LETRAS");
     }
 
     public void confirmWord(ActionEvent event) {
         String tryedWord = insertWord.getText();
-        System.out.println(tryedWord);
-        System.out.println(gameWord);
 
         if(tryedWord.equals(gameWord)){
             System.out.println("Acertou");
